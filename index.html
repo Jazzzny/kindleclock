@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kindleclock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="clock"></div>
+
+    <div id="date"></div>
+
+    <div class="sections-container">
+        <div id="weather">
+            <h2 id="weatherTitle">Weather</h2>
+            <p id="weatherInfo">Loading weather...</p>
+
+            <div class="weather-details">
+                <img id="weatherIcon" alt="Weather Icon">
+                <p id="weatherDescription"></p>
+            </div>
+        </div>
+
+        <div id="headlines">
+            <h2>Top Headlines</h2>
+            <ul id="headlineList"></ul>
+        </div>
+    </div>
+
+    <div id="settingsButtonContainer">
+        <button id="openSettings">Settings</button>
+    </div>
+
+    <div id="settingsPopup" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Settings</h2>
+            <label for="timeFormat">Choose Time Format:</label>
+            <select id="timeFormat">
+                <option value="12">12 Hour</option>
+                <option value="24">24 Hour</option>
+            </select>
+
+            <label for="country">Choose Country:</label>
+            <select id="country">
+                <option value="">Select country</option>
+            </select>
+
+            <label for="location">Enter Location:</label>
+            <input type="text" id="location" value="Toronto">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
